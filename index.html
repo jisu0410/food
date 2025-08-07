@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음식 영양정보 검색</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍎 음식 영양정보 검색</h1>
+            <p>음식의 칼로리, 영양성분, 효능을 검색해보세요</p>
+        </header>
+        
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="음식 이름을 입력하세요 (예: 사과, 바나나, 쌀)" />
+            <button id="searchBtn">검색</button>
+        </div>
+        
+        <div id="loadingSpinner" class="loading hidden">
+            <div class="spinner"></div>
+            <p>검색 중...</p>
+        </div>
+        
+        <div id="results" class="results"></div>
+        
+        <div class="info-section">
+            <h3>💡 사용법</h3>
+            <ul>
+                <li>음식 이름을 한글로 입력하세요</li>
+                <li>여러 음식을 비교하려면 각각 검색하세요</li>
+                <li>영양성분은 100g 기준입니다</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
